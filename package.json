@@ -1,0 +1,19 @@
+{
+  "name": "poc-parallelization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:ci-all": "cypress run",
+    "cy:getting1": "cypress run --spec cypress/e2e/1-getting-started",
+    "cy:advance2": "cypress run --spec cypress/e2e/2-advanced-examples",
+    "cy:advance3": "cypress run --spec cypress/e2e/3-advanced-examples",
+    "cy:advance4": "cypress run --spec cypress/e2e/4-advanced-examples"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.4.0"
+  }
+}
