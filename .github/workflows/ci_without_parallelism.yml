@@ -1,0 +1,21 @@
+name: Cypress Tests Sequential
+
+on: push
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  Cypress-run-sequential:
+    runs-on: ubuntu-latest
+    steps:
+    -
+      name: Checkout project
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    -
+      name: "Cypress run"
+      uses: cypress-io/github-action@v6
+

@@ -10,6 +10,7 @@ Projeto de estudo sobre Paralelização de testes e2e utilizando cypress
 ## Ferramentas e tecnólogias utilizadas
 
 * Cypress versão 13.4.0
+* Github Actions
 
 ## Como executar os testes de exemplo
 
